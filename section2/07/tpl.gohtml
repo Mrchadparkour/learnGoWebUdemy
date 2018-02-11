@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    {{range .Wisdom}}
+    <div>{{.Name}} - {{.Motto}}</div>
+    {{end}}
+
+
+    {{range .Transport}}
+    <div>{{.Manufacturer}} - {{.Model}} - {{.Doors}}</div>
+    {{end}}
+  </body>
+</html>

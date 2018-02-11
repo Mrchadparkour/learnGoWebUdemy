@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    {{$Peeps := .Peeps}}
+    {{$Trans := .Trans}}
+    {{range $peep := $Peeps}}
+    <div>
+      <h1>{{uc $peep.Name}}</h1>
+      {{range $car := $Trans}}
+      <p>{{ft $car.Model}}</p>
+      {{end}}
+    </div>
+    {{end}}
+  </body>
+</html>
